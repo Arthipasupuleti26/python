@@ -1,0 +1,104 @@
+#sum of array
+"""
+def solve(arr):
+    total=0
+    for num in arr:
+        total+=num
+    return total
+arr=list(map(int,input().split()))
+result=solve(arr)
+print(result)
+
+"""
+
+def solve(arr):
+    largest=arr[0]
+    for num in arr:
+        if num>largest:
+            largest=num
+    return largest
+arr=list(map(int,input().split()))
+print(solve(arr))
+
+
+
+def solve(arr):
+    even=0
+    odd=0
+    for num in arr:
+        if num%2==0:
+            even+=1
+        else:
+            odd+=1
+    return even,odd
+    
+    
+arr=list(map(int,input().split()))
+even,odd=solve(arr)
+print("Even",even)
+print("odd",odd)
+
+
+
+def solve(arr):
+    result = []
+
+    for i in range(len(arr) - 1, -1, -1):
+        result.append(arr[i])
+
+    return result
+
+arr = list(map(int, input().split()))
+print(solve(arr))
+
+
+def arthyi(arr,target):
+    for i in range(len(arr)):
+        if arr[i]==target:
+            return i
+    return -1
+arr=list(map(int,input().split()))
+target=int(input())
+print(arthyi(arr,target))
+
+#Infosys
+# 1. Contains Duplicate
+
+def solve(arr):
+    seen = set()
+
+    for num in arr:
+        if num in seen:
+            return True
+
+        seen.add(num)
+
+    return False
+
+
+arr = list(map(int, input().split()))
+print(solve(arr))
+
+#2. Missing Number
+
+def solve(arr):
+    n = len(arr)
+
+    expected_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+
+    return expected_sum - actual_sum
+
+
+arr = list(map(int, input().split()))
+print(solve(arr))
+
+#3. Reverse String
+def reverseString(s):
+    s[:] = s[::-1]
+    return s
+
+chars = list(input().strip())
+
+print(reverseString(chars))
+

@@ -1,0 +1,99 @@
+#While loop
+"""
+candies=10
+
+while candies>0:
+    print("Give to friend")
+    candies-=1  #c=c-1
+print(candies)
+"""
+
+#for loop
+"""
+
+candies=10
+for i in range(0,candies):
+    print("Give to friend")
+print(candies)
+"""
+
+#sample string
+"""
+str="Hello, World!"
+#for i in str:
+#   print(i)
+for i in range(len(str)):
+    print(i)
+"""
+
+#Nested loops
+#continue
+"""
+candies=10
+for i in range(candies):
+    if candies - i==5:
+        print("only 5 candies left")
+        continue
+
+    print("Give to friend")
+"""
+
+#loops
+"""
+n=5
+
+for i in range(1,n+1):
+    print(i)
+    
+    
+#i=1
+#while i<=n:
+#   print(i)
+#   i += 1
+
+"""
+
+#sum of n natural numbers
+"""
+n=5
+
+i=1
+sum=0 
+    
+while i<=n:     #for i in range(1,n+1):
+    sum=sum+i
+    i += 1
+print(sum)
+
+#even
+n=5
+
+i=1
+
+while i<=n:
+    if i%2 == 0:
+        print(i)
+    i +=i
+"""
+#odd
+
+"""
+n=10
+
+i=1
+
+while i<=n:
+    if i%2 != 0:
+        i +=1
+        continue
+    print(i)
+    i+=1
+
+
+#table
+n=3
+i=1
+while i<=10:
+    print(n*i)
+    i+=1
+"""
